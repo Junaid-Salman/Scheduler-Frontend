@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Outfit", system-ui, sans-serif;
+}
+
+/* FullCalendar header: spacing between Today and Next */
+.fc .fc-toolbar-chunk .fc-next-button {
+  margin-left: 0.75rem;
+}
+
+/* FullCalendar header buttons: focus = illuminate only, no default ring */
+.fc .fc-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.fc .fc-button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px rgb(148 163 184 / 0.5);
+}
