@@ -1,6 +1,7 @@
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction";
+import Navbar from "./components/Navbar";
 
 const events = [
   {
@@ -31,8 +32,10 @@ const events = [
 
 function App() {
   return (
+    <>
+    <Navbar/>
     <div className="min-h-screen bg-slate-950 text-slate-100 p-6">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-4xl mx-auto border border-slate-50 rounded-sm">
         <FullCalendar
           plugins={[dayGridPlugin, interactionPlugin]}
           initialView="dayGridMonth"
@@ -45,6 +48,7 @@ function App() {
         />
       </div>
     </div>
+    </>
   );
 }
 
