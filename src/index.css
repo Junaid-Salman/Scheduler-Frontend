@@ -18,3 +18,20 @@
   outline: none;
   box-shadow: 0 0 0 2px rgb(148 163 184 / 0.5);
 }
+
+/* Navbar */
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.navbar-dropdown {
+  animation: fadeSlide 0.2s ease-out forwards;
+}
